@@ -1377,7 +1377,7 @@
         }
         .calendar-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 10px;
         }
         .calendar-month {
@@ -1385,6 +1385,7 @@
             border: 1px solid var(--line-soft);
             border-radius: 6px;
             padding: 6px 6px 8px;
+            min-width: 0;
         }
         .calendar-month .month-label {
             font-family: 'JetBrains Mono', monospace;
@@ -1398,11 +1399,12 @@
         }
         .calendar-month .month-days {
             display: grid;
-            grid-template-columns: repeat(7, 1fr);
+            grid-template-columns: repeat(7, minmax(0, 1fr));
             gap: 2px;
         }
         .calendar-month .day-cell {
             aspect-ratio: 1;
+            width: 100%;
             border-radius: 2px;
             background: var(--bg);
             border: 1px solid var(--line-soft);
@@ -1414,7 +1416,6 @@
             color: var(--ink-faint);
             transition: .12s;
             cursor: default;
-            min-height: 18px;
         }
         .calendar-month .day-cell.done {
             background: var(--accent, var(--ok));
@@ -1784,9 +1785,6 @@
 
         /* ---------- responsive ---------- */
         @media (max-width:600px) {
-            .calendar-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
             .calendar-modal {
                 max-width: 100%;
                 padding: 12px 12px 14px;
@@ -1837,12 +1835,10 @@
                 padding: 8px 10px;
             }
             .calendar-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 6px;
+                gap: 8px;
             }
             .calendar-month .day-cell {
-                font-size: 6.5px;
-                min-height: 14px;
+                font-size: 9.5px;
             }
             .calendar-stats {
                 gap: 6px;
@@ -1880,12 +1876,10 @@
         }
         @media (max-width:380px) {
             .calendar-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 4px;
+                gap: 6px;
             }
             .calendar-month .day-cell {
-                font-size: 5.5px;
-                min-height: 12px;
+                font-size: 8.5px;
             }
         }
 
