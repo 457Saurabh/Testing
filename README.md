@@ -18,3 +18,4 @@ Open `index.html` in a modern browser. For the smoothest localStorage/file behav
 - Full erase now also clears notes and preferences and returns to onboarding.
 - WhatsApp SVG uses a filled icon style consistent with the existing social icons.
 - HTML escaping now safely coerces non-string values before escaping.
+https://drive.proton.me/urls/DH3B7AVEFW#PG1xvyHrEmOK
