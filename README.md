@@ -1,7 +1,5 @@
 NOW SOCIAL PRESENT WILL PAUSE TILL MARCH 2027!-THERE WILL NOTHING ADD NOR REMOVE IN THE FILE
 
-https://drive.proton.me/urls/DH3B7AVEFW#PG1xvyHrEmOK
-
 # STREAK — Don't Break The Chain
 
 A single-file, offline-first habit tracker. No sign-up, no server, no accounts — everything lives in your browser's `localStorage`. Open `streak-clean.html` in any modern browser and it just works.
